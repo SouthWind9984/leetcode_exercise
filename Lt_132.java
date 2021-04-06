@@ -1,7 +1,5 @@
 package leetcode_exercise;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import java.util.Arrays;
 
 public class Lt_132 {
