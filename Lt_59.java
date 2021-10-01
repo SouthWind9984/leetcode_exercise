@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_59 {
     public static void main(String[] args) {

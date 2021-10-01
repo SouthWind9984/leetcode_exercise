@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Offer29 {
 
@@ -8,12 +8,12 @@ public class Offer29 {
 		int arr [] = new int [nums.length*nums[0].length];
 		arr= spiralOrder(nums);
 		for (int i : arr) {
-			System.out.print(i+"  ");
-			
-			
+            System.out.print(i + "  ");
+
+
 //			for(int i=0,j=0;i*j<max_c*max_r;) {
-//				
-//				
+//
+//
 //				if(j==max_c) {
 //					i++;
 //				}
@@ -21,7 +21,7 @@ public class Offer29 {
 //				if(i==0) {
 //					j++;
 //				}
-//				
+//
 //			}
 //			for(int i=max_r,j=max_c-1;i+j>0;) {
 //				res[n++]=matrix[i][j];
@@ -35,35 +35,35 @@ public class Offer29 {
 		}
 		System.out.println();
 		for (int j = 1; j <=25; j++) {
-			
+
 			System.out.print(j+"\t");
 			if(j%5==0)
 				System.out.println();
 		}
 	}
 	public static int[] spiralOrder(int[][] matrix) {
-		
-		int [] res = new int [matrix.length*matrix[0].length];
-		int n = 0;
-		int max_r = matrix.length-1;
-		int max_c = matrix[0].length-1;
-		int r=0;//行	
-		int c=0;//列
-		int m=0;
-		while(n<res.length) {
-			//向右
-				
-				while(c<max_c) {
-					res[n++]=matrix[r][c++];
-				}
-			//向下
-				
+
+        int[] res = new int[matrix.length * matrix[0].length];
+        int n = 0;
+        int max_r = matrix.length - 1;
+        int max_c = matrix[0].length - 1;
+        int r = 0;//行
+        int c = 0;//列
+        int m = 0;
+        while (n < res.length) {
+            //向右
+
+            while (c < max_c) {
+                res[n++] = matrix[r][c++];
+            }
+            //向下
+
 				do{
 					res[n++]=matrix[r++][c];
 				}while(r<max_r);
 			//向左
-				
-				while(c>m){
+
+            while(c>m){
 					res[n++]=matrix[r][c--];
 				}
 			//向上
@@ -74,8 +74,8 @@ public class Offer29 {
 				max_c--;
 				m++;
 		}
-		
-		return res;
+
+        return res;
 
     }
 

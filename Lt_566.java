@@ -1,12 +1,12 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_566 {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 
-		
-		int [][] nums = {{1,2,3,4},{5,6,7,8}};
+
+        int [][] nums = {{1,2,3,4},{5,6,7,8}};
 		nums = matrixReshape(nums, 2,4);
 		for (int i = 0; i < nums.length; i++) {
 			int[] js = nums[i];
@@ -33,7 +33,7 @@ public class Lt_566 {
 			}
  		}
 		return res;
- 		
-	}
+
+    }
 
 }

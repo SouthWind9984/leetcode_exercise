@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Scanner;
 
@@ -33,37 +33,32 @@ public class Lt_463 {
 		int result =islandPerimeter(gid);
 		System.out.println(result);
 	}
-	
+
 	public static int islandPerimeter(int[][] grid) {
-		
+
 		int count=0;
 		int h_count=0;
 		int l_count=0;
 		for(int i=0;i<grid.length;i++)	//遍历行
 		{
 			for(int j=0;j<grid[0].length;j++)	//遍历列
-			{
-				if(grid[i][j]==1) 
-				{
-					count++;
-					if(i<grid.length-1)
-					{
-						if(grid[i+1][j]==1)
-						{
-							l_count++;
-						}
-					}
-					if(j<grid[0].length-1) 
-					{
-						if(grid[i][j+1]==1)
-						{
-							h_count++;
-						}
-					}
-				}
+            {
+                if (grid[i][j] == 1) {
+                    count++;
+                    if (i < grid.length - 1) {
+                        if (grid[i + 1][j] == 1) {
+                            l_count++;
+                        }
+                    }
+                    if (j < grid[0].length - 1) {
+                        if (grid[i][j + 1] == 1) {
+                            h_count++;
+                        }
+                    }
+                }
 			}
-	
-		}
+
+        }
 //		for(int i=0;i<grid.length;i++)	//遍历行
 //		{
 //			for(int j=0;j<grid[0].length-1;j++)	//遍历列
@@ -73,7 +68,7 @@ public class Lt_463 {
 //				}
 //			}
 //		}
-//		
+//
 //		if(grid.length>1)
 //		{
 //			for(int j=0;j<grid[0].length;j++)	//遍历列

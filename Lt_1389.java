@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 
@@ -19,8 +19,8 @@ public class Lt_1389 {
 		for (int i = 0; i < target.length; i++) {
 			list.add(index[i],nums[i]);
 		}
-		
-		for(int i=0;i<list.size();i++)
+
+        for(int i=0;i<list.size();i++)
 		{
 			target[i]=list.get(i);
 		}

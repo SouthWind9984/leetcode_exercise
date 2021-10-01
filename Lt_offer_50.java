@@ -1,6 +1,4 @@
-package leetcode_exercise;
-
-import java.util.HashMap;
+package LeetCode_ADailyTopic;
 
 public class Lt_offer_50 {
     public static void main(String[] args) {

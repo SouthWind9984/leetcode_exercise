@@ -1,25 +1,24 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Arrays;
 
 public class Lt_04_02 {
 
-	
-	
-	public static void main(String[] args) {
+
+    public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 		int [] nums = {-10,-3,0,5,9};
 		TreeNode newnode = sortedArrayToBST(nums);
 //		System.out.println(newnode.val);
-		
-	}
+
+    }
 	public static class TreeNode {
 		int val;
 		 TreeNode left;
 		 TreeNode right;
 		TreeNode(int x) { val = x; }
-		
-	}
+
+    }
 	public static TreeNode sortedArrayToBST(int[] nums) {
 		if(nums.length==0) return null;
         int len = nums.length;
@@ -29,6 +28,6 @@ public class Lt_04_02 {
         newNode.right= sortedArrayToBST(Arrays.copyOfRange(nums, len/2+1, len));
         return newNode;
     }
-	
+
 
 }

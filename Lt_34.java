@@ -1,6 +1,6 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 /**
- * 
+ *
  * @author SouthWind
  * 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
 
@@ -22,10 +22,10 @@ public class Lt_34 {
 		for (int i : res) {
 			System.out.println(i);
 		}
-		
-	}
-	
-	 public static int[] searchRange(int[] nums, int target) {
+
+    }
+
+    public static int[] searchRange(int[] nums, int target) {
 		 int res [] = {-1,-1};
 		 if(nums.length==0) {
 			 return res;
@@ -50,10 +50,10 @@ public class Lt_34 {
 			 else {
 				return res;
 			 }
-				 
-		 }
-		 
-		 if(falg) {
+
+         }
+
+        if(falg) {
 			 for(int i= mid;i<nums.length;i++) {
 				 if(nums[i]==target) {
 					 res[1]=i;
@@ -77,5 +77,5 @@ public class Lt_34 {
 		 }
 		 return res;
 	    }
-	
+
 }

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_922 {
 
@@ -11,19 +11,18 @@ public class Lt_922 {
 		}
 	}
 	public static int[] sortArrayByParityII(int[] A) {
-		int []j=new int [A.length/2];			//创建奇偶数组存放
-		int [] o = new int [A.length/2];
-		int j1=0;			
-		int o1=0;
-		for (int i = 0; i < A.length; i++) {
-			if(A[i]%2==0) {
-				o[o1++]=A[i];
-			}
-			else
-				j[j1++]=A[i];
-		}
-		for(int i=0;i<A.length;i+=2) {
-			A[i]=o[--o1];
+        int[] j = new int[A.length / 2];            //创建奇偶数组存放
+        int[] o = new int[A.length / 2];
+        int j1 = 0;
+        int o1 = 0;
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] % 2 == 0) {
+                o[o1++] = A[i];
+            } else
+                j[j1++] = A[i];
+        }
+        for (int i = 0; i < A.length; i += 2) {
+            A[i] = o[--o1];
 			A[i+1]=j[--j1];
 		}
 		return A;

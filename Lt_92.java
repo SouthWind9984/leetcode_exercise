@@ -1,6 +1,4 @@
-package leetcode_exercise;
-
-import java.util.List;
+package LeetCode_ADailyTopic;
 
 public class Lt_92 {
 

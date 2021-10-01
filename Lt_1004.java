@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_1004 {
 
@@ -15,10 +15,10 @@ public class Lt_1004 {
 	 * @param K
 	 * @return
 	 */
-	
-	public static int longestOnes(int[] A, int K) {
-		
-		int length = A.length;
+
+    public static int longestOnes(int[] A, int K) {
+
+        int length = A.length;
 		int right =0 ;
 		int left = 0 ;
 		int zeros = 0;

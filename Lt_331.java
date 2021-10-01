@@ -1,6 +1,4 @@
-package leetcode_exercise;
-
-import java.util.Stack;
+package LeetCode_ADailyTopic;
 
 public class Lt_331 {
     public static void main(String[] args) {

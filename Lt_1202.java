@@ -1,12 +1,6 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Lt_1202 {
 
@@ -16,8 +10,8 @@ public class Lt_1202 {
 		List<List<Integer>> pairs = new ArrayList<List<Integer>>();
 		System.out.println(smallestStringWithSwaps(s, pairs));
 	}
-	
-		    public static String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
+
+	public static String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
 		        DisjointSetUnion dsu = new DisjointSetUnion(s.length());
 		        for (List<Integer> pair : pairs) {
 		            dsu.unionSet(pair.get(0), pair.get(1));

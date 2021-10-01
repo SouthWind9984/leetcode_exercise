@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ public class Lt_914 {
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 
-		
+
 		int [] deck = {1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3};
 		boolean f = hasGroupsSizeX(deck);
 		System.out.println(f);
@@ -32,6 +32,6 @@ public class Lt_914 {
 	    public static int gcd(int x, int y) {
 	        return x == 0 ? y : gcd(y % x, x);
 	    }
-	 
-	
+
+
 }

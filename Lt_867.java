@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_867 {
 
@@ -7,8 +7,8 @@ public class Lt_867 {
 
 	}
 	public static int[][] transpose(int[][] matrix) {
-		
-		int len = matrix.length;
+
+        int len = matrix.length;
 		int col = matrix[0].length;
 		if(len%2==0||col%2==0||len==1||col==1) {
 			int	[][] res = new int [col][len];

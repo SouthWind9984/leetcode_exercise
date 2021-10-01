@@ -1,7 +1,6 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 public class Lt_1492 {
 

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class Lt_288 {
 		if(nums.length==0) {
 			return res;
 		}
-		
+
 		else if(nums.length==1) {
 			res.add(""+nums[0]);
 			return res;
@@ -24,17 +24,16 @@ public class Lt_288 {
 			int top=nums[0];
 			int foot=nums[0];
 			for(int j=1;j<nums.length;j++) {
-				if(nums[j]-nums[j-1]==1) 
-					foot=nums[j];
-				else {
-					if(foot!=top) {
-						res.add(""+top+"->"+foot);
-					}
-					else {
-						res.add(""+top);
-					}
-					top=nums[j];
-					foot=nums[j];
+                if (nums[j] - nums[j - 1] == 1)
+                    foot = nums[j];
+                else {
+                    if (foot != top) {
+                        res.add("" + top + "->" + foot);
+                    } else {
+                        res.add("" + top);
+                    }
+                    top = nums[j];
+                    foot = nums[j];
 				}
 			}
 			if(foot!=top) {
@@ -43,8 +42,8 @@ public class Lt_288 {
 			else {
 				res.add(""+top);
 			}
-			
-		}
+
+        }
 		return res;
     }
 

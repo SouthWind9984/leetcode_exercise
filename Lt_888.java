@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_888 {
 
@@ -10,8 +10,8 @@ public class Lt_888 {
 	}
 	public static int[]  fairCandySwap(int[] A, int[] B) {
 		int [] res = new int [2];
-		
-		int sum=0;
+
+        int sum=0;
 		int A_sum=0;
 		int B_sum=0;
 		for (int i = 0; i < A.length; i++) {

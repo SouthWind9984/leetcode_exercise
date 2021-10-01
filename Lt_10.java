@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -11,8 +11,8 @@ public class Lt_10 {
 
 	}
 	public static boolean isMatch(String s, String p) {
-		
-		Pattern pattern = Pattern.compile(p);
+
+        Pattern pattern = Pattern.compile(p);
 		Matcher matcher = pattern.matcher(s);
 		int n = s.length();
 		if(matcher.find())

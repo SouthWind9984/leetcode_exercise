@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_1052 {
 
@@ -8,10 +8,10 @@ public class Lt_1052 {
 		int [] customers = {1,0,1,2,1,1,7,5},grumpy = {0,1,0,1,0,1,0,1};
 		System.out.println(maxSatisfied(customers, grumpy, 4));
 	}
-	
-	public static int maxSatisfied(int[] customers, int[] grumpy, int X) {
-		
-		//1为生气，0为生气
+
+    public static int maxSatisfied(int[] customers, int[] grumpy, int X) {
+
+        //1为生气，0为生气
 		int len = customers.length;
 		int sum = 0;
 		for (int i = 0; i < len ; i++) {

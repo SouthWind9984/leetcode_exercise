@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

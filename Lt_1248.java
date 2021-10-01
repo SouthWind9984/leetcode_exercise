@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_1248 {
 
@@ -7,9 +7,9 @@ public class Lt_1248 {
 
 	}
 
-	
-	 public int numberOfSubarrays(int[] nums, int k) {
-		 
-		 return 0;
+
+    public int numberOfSubarrays(int[] nums, int k) {
+
+        return 0;
 	 }
 }

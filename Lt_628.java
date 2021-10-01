@@ -1,18 +1,17 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Arrays;
 
 public class Lt_628 {
-	
+
 	public static void main(String[] args) {
 		int []	nums = {-8,-7,-2,10,20};
 		int sum = maximumProduct(nums);
 		System.out.println(sum);
 	}
-	
-	
-	
-	 public static int maximumProduct(int[] nums) {
+
+
+    public static int maximumProduct(int[] nums) {
 		 int res=1;
 		 if(nums.length==3) {
 			for (int i = 0; i < nums.length; i++) {
@@ -20,9 +19,7 @@ public class Lt_628 {
 				res*=j;
 			}
 			return res;
-		 }
-		 
-		 else {
+		 } else {
 			 Arrays.sort(nums);
 			 for (int i : nums) {
 				System.out.print(i+"\t");

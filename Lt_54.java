@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,8 +9,8 @@ public class Lt_54 {
 		// TODO 自动生成的方法存根
 		int [][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
 		System.out.println(spiralOrder(matrix));
-		
-	}
+
+    }
 	public static List<Integer> spiralOrder(int[][] matrix) {
 		List<Integer> list = new ArrayList<Integer>();
 		if(matrix == null || matrix.length == 0)

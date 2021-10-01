@@ -1,17 +1,17 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_303 {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-	
-	}
+
+    }
 }
 
 
 class NumArray {
-	
-	int [] arr;
+
+    int [] arr;
     public NumArray(int[] nums) {
         arr = nums;
          if(nums.length == 0)
@@ -24,7 +24,7 @@ class NumArray {
 			}
          }
     }
-    
+
     public int sumRange(int i, int j) {
     	return i==0?arr[j]:arr[j]-arr[i-1];
     }

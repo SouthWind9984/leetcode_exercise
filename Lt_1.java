@@ -1,8 +1,8 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_1 {
-	
-	public static int[] twoSum(int[] nums, int target) {
+
+    public static int[] twoSum(int[] nums, int target) {
 		int [] array = new int [2];
 		boolean f=false;
 		for(int i=0;i<nums.length-1;i++)

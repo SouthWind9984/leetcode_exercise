@@ -1,15 +1,14 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Lt_830 {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-		
-		String str = "abbxxxxzzy";
+
+        String str = "abbxxxxzzy";
 		List<List<Integer>> positions = largeGroupPositions(str);
 		System.out.println(positions);
 //		for (List<Integer> list : positions) {
@@ -18,11 +17,11 @@ public class Lt_830 {
 //			}
 //		}
 	}
-	
-	public static  List<List<Integer>> largeGroupPositions(String s) {
+
+    public static  List<List<Integer>> largeGroupPositions(String s) {
 		List<List<Integer>> res = new ArrayList<List<Integer>>();
-		
-		for(int i=0;i<s.length();i++) {
+
+        for(int i=0;i<s.length();i++) {
 			for(int j=i;j<s.length()-1;j++) {
 				int n=0;
 				char ch =s.charAt(i);
@@ -33,11 +32,11 @@ public class Lt_830 {
 					n++;
 				}
 			}
-			
-		}
-		
-		return null;
-        
+
+        }
+
+        return null;
+
     }
 
 }

@@ -1,7 +1,6 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -13,16 +12,16 @@ public class Lt_1178 {
 		String [] puzzles = {"aboveyz","abrodyz","abslute","absoryz","actresz","gaswxyz"};
 		System.out.println(findNumOfValidWords(words, puzzles));
 	}
-	
-	/**
-	 * 枚举
-	 * @param words
-	 * @param puzzles
-	 * @return
-	 */
+
+    /**
+     * 枚举
+     * @param words
+     * @param puzzles
+     * @return
+     */
 	public static List<Integer> findNumOfValidWords(String[] words, String[] puzzles) {
-		
-		List<Integer> resList = new ArrayList<Integer>();
+
+        List<Integer> resList = new ArrayList<Integer>();
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		String str ="";
 		int tmp = 0 ;

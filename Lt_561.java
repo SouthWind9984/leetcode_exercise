@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class Lt_561 {
 			sum+=nums[i];
 		}
 		return sum;
-        
+
     }
 
 }

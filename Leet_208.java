@@ -1,8 +1,4 @@
-package leetcode_exercise;
-
-import leetcode_exercise.Lt_104.TreeNode;
-
-import java.util.ArrayList;
+package LeetCode_ADailyTopic;
 
 public class Leet_208 {
 

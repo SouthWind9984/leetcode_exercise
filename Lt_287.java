@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Arrays;
 
@@ -9,13 +9,13 @@ public class Lt_287 {
 		int [] nums  = {1,3,4,2,2};
 		System.out.println(findDuplicate(nums));
 	}
-	
-	public static int findDuplicate(int[] nums) {
+
+    public static int findDuplicate(int[] nums) {
 		Arrays.sort(nums);
 		int res = 0;
 		for (int i = 0; i < nums.length-1; i++) {
-			
-			if((nums[i]^nums[i+1])==0)
+
+            if((nums[i]^nums[i+1])==0)
 				return nums[i];
 		}
 		return 0;

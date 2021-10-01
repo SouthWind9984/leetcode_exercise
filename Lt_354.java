@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -20,7 +20,7 @@ public class Lt_354 {
 					return c1[0]-c2[0];
 				}
 				else
-					
+
 				return c2[1]-c1[1];
 			}
 		});
@@ -32,9 +32,9 @@ public class Lt_354 {
 			}
 			System.out.println();
 		}
-		
-		
-		int len = arr.length;
+
+
+        int len = arr.length;
 		int [] dp = new int [len];
 		for (int i = 0; i < dp.length; i++) {
 			int j = dp[i];

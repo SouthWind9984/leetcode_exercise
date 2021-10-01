@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Map.Entry;
 import java.util.TreeMap;
@@ -8,8 +8,8 @@ public class Lt_306 {
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 	}
-	
-	class NumArray {
+
+    class NumArray {
 
 		private int[] arr;
 		private TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
@@ -24,8 +24,8 @@ public class Lt_306 {
 	    public void update(int index, int val) {
 	    	map.put((index+1),arr[index+1]-val);
 	    }
-	    
-	    public int sumRange(int left, int right) {
+
+        public int sumRange(int left, int right) {
 	    	int res = arr[right-left];
 	    	if(map.firstKey()>right)
 	    		return res;
@@ -41,8 +41,8 @@ public class Lt_306 {
 	    				res-=map.get(i);
 	    		}
 	    	}
-	    	
-			return res;
+
+            return res;
 
 	    }
 	}

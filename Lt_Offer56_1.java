@@ -1,8 +1,7 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
-import java.util.Set;
 
 public class Lt_Offer56_1 {
 
@@ -14,11 +13,11 @@ public class Lt_Offer56_1 {
 			System.out.println(i);
 		}
 	}
-	
+
 	public static int[] singleNumbers(int[] nums) {
-		
-		
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		for (int i : nums) {
 			map.put(i, map.getOrDefault(i, 0)+1);
 			if(map.get(i)==2) {
@@ -32,6 +31,6 @@ public class Lt_Offer56_1 {
 		}
 		return res;
     }
-	
+
 
 }

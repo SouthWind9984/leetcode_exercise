@@ -1,6 +1,8 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Lt_90 {
 

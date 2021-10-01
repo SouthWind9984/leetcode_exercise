@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_495 {
 
@@ -17,29 +17,29 @@ public class Lt_495 {
 
 	 * @param args
 	 */
-	
+
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 
 		int arr[] = {};
 		int n = findPoisonedDuration(arr, 1);
 		System.out.println(n);
-		
-	}
-	
-	 public static int findPoisonedDuration(int[] timeSeries, int duration) {
-		 int t=0;
-			if(timeSeries.length==0||duration==0) 
-	            return 0;
-	        if(timeSeries.length==1)
-	            return duration;
-			    for(int i=0;i<timeSeries.length-1;i++){
-				 if(timeSeries[i+1]-timeSeries[i]>=duration) {
-					 t=t+duration;
-				 }
-				 if(timeSeries[i+1]-timeSeries[i]<duration) {
-					 t=t+timeSeries[i+1]-timeSeries[i];
-				 }
+
+    }
+
+    public static int findPoisonedDuration(int[] timeSeries, int duration) {
+        int t = 0;
+        if (timeSeries.length == 0 || duration == 0)
+            return 0;
+        if (timeSeries.length == 1)
+            return duration;
+        for (int i = 0; i < timeSeries.length - 1; i++) {
+            if (timeSeries[i + 1] - timeSeries[i] >= duration) {
+                t = t + duration;
+            }
+            if (timeSeries[i + 1] - timeSeries[i] < duration) {
+                t = t + timeSeries[i + 1] - timeSeries[i];
+            }
 			 }
 			 return t+duration;
 	 }

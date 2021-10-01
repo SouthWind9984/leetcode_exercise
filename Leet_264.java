@@ -1,6 +1,4 @@
-package leetcode_exercise;
-
-import java.util.ArrayList;
+package LeetCode_ADailyTopic;
 
 public class Leet_264 {
     public static void main(String[] args) {

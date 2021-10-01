@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_461 {
 
@@ -7,11 +7,11 @@ public class Lt_461 {
 
 		System.out.println(hammingDistance(1000000004, 1323219312));
 	}
-	
+
 	public static int hammingDistance(int x, int y) {
 //		return test(x, y);
-		
-		int tmp = x^y;
+
+        int tmp = x^y;
 		int res = Integer.bitCount(tmp);
 //		String binaryString = Integer.toBinaryString(tmp);
 //		for (int i = 0; i < binaryString.length(); i++) {
@@ -54,9 +54,9 @@ public class Lt_461 {
 				}
 			}
 		}
-		
-		
-		return res;
+
+
+        return res;
 	}
 
 }

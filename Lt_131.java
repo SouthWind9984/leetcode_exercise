@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +16,7 @@ public class Lt_131 {
         int len = s.length();
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < i; j++) {
-                
+
             }
         }
         return null;

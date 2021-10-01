@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.HashMap;
 
@@ -10,8 +10,8 @@ public class Lt_1742 {
 //		System.out.println(2/10);
 	}
 	public static int countBalls(int lowLimit, int highLimit) {
-		
-		int res = 0;
+
+        int res = 0;
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		for (int i = lowLimit; i <=highLimit ; i++) {
 			int tmp = i;

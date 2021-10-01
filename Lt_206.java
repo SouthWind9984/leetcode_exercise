@@ -1,7 +1,4 @@
-package leetcode_exercise;
-
-import java.awt.List;
-import java.util.Arrays;
+package LeetCode_ADailyTopic;
 
 public class Lt_206 {
 
@@ -22,34 +19,37 @@ public class Lt_206 {
             }
 		}
 		System.out.println(reverseList(firstNode));
-		
+
 	}
 	//Definition for singly-linked list.
-	
-	 
-	public static ListNode reverseList(ListNode head) {
+
+
+    public static ListNode reverseList(ListNode head) {
 		ListNode lastnode =head , firstnode = null;
 		while(lastnode!=null) {
 			ListNode next = lastnode.next;
 			lastnode.next = firstnode;
 			firstnode =lastnode;
-			lastnode = next;
-		}
-		return firstnode;
+            lastnode = next;
+        }
+        return firstnode;
     }
 
 }
+
 class ListNode {
     int val;
     ListNode next;
-    ListNode() {}
-    ListNode(int val) 
-    { 
-    	this.val = val; 
+
+    ListNode() {
     }
-    ListNode(int val, ListNode next) 
-    { 
-    	this.val = val;
-    	this.next = next; 
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 }

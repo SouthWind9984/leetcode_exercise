@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_75 {
 
@@ -14,7 +14,7 @@ public class Lt_75 {
 //		boolean swap =true;
 //		for(int i=0;i<nums.length-1;i++)
 //		{
-//			if (swap == false)         //若没有发生交换，则说明后面顺序已经排好。  
+//			if (swap == false)         //若没有发生交换，则说明后面顺序已经排好。
 //		        break;
 //		      swap = false;
 //		      for (int j = 0; j < nums.length - 1 - i; j++) {
@@ -26,7 +26,7 @@ public class Lt_75 {
 //				}
 //			}
 //		}
-    
+
 		boolean swapp =true;
 	    int indexOfLastUnsortedElement = nums.length-1;    //记录上次发生交换的位置
 	    int  swappedIndex = -1;    //记录交换的位置
@@ -49,7 +49,7 @@ public class Lt_75 {
 	      }
 	      indexOfLastUnsortedElement = swappedIndex;
 	    }
-	
-	
-	}
+
+
+    }
 }

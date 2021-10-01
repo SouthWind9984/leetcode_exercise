@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -40,6 +40,6 @@ public class Lt_703 {
 	        return o2 - o1;
 	    }
 	}
-	
+
 
 }

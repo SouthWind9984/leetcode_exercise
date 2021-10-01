@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_238 {
 
@@ -7,14 +7,14 @@ public class Lt_238 {
 		int [] arr = {2,2,2,2};
 		productExceptSelf(arr);
 	}
-	
+
 	public static int[] productExceptSelf(int[] nums) {
-		
-		int [] answer = new int [nums.length];
+
+        int [] answer = new int [nums.length];
 		int n = 1;
-        for(int i = 0 ; i < answer.length ; i++){
-        	answer[i] = n; 
-        	n *= nums[i]; 
+        for(int i = 0 ; i < answer.length ; i++) {
+            answer[i] = n;
+            n *= nums[i];
         }
         for (int i = 0; i < answer.length; i++) {
 			int j = answer[i];
@@ -31,6 +31,6 @@ public class Lt_238 {
 			System.out.print(j+"  ");
 		}
         return answer;
-		
-	}
+
+    }
 }

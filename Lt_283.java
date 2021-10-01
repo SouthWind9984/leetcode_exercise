@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_283 {
 
@@ -8,8 +8,8 @@ public class Lt_283 {
 		int [] nums = {0,1,0,3,12};
 		moveZeroes(nums);
 	}
-	
-	public static void moveZeroes(int[] nums) {
+
+    public static void moveZeroes(int[] nums) {
 		int count=0;
 		for (int i = 0; i < nums.length; i++) {
 			int n = nums[i];

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_2 {
 
@@ -46,7 +46,7 @@ public class Lt_2 {
 			 hard=hard.next;
 		 }
 		 return null;
-	   
-	 }
+
+     }
 
 }

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_647 {
 
@@ -11,12 +11,12 @@ public class Lt_647 {
 		// TODO 自动生成的方法存根
 
 	}
-	
-	
-	public int countSubstrings(String s) {
-		
-		
-		return 0;
+
+
+    public int countSubstrings(String s) {
+
+
+        return 0;
     }
 
 }

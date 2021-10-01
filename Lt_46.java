@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,8 +12,8 @@ public class Lt_46 {
 		int [] nums = {1,2,3};
 		System.out.println(permute(nums));
 	}
-	
-	public static List<List<Integer>> permute(int[] nums) {
+
+    public static List<List<Integer>> permute(int[] nums) {
 		int len = nums.length;
 		List<List<Integer>> resList = new ArrayList<List<Integer>>();
 		for (int i = 0; i < nums.length; i++) {

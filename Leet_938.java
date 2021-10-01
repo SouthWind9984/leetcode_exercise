@@ -1,6 +1,6 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
-import leetcode_exercise.Lt_173.TreeNode;
+import LeetCode_ADailyTopic.Lt_173.TreeNode;
 
 import java.util.Stack;
 

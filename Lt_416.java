@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_416 {
 
@@ -7,8 +7,8 @@ public class Lt_416 {
 		boolean f =canPartition(nums);
 		System.out.println(f);
 	}
-	
-	public static boolean canPartition(int[] nums) {
+
+    public static boolean canPartition(int[] nums) {
 		int  sum=0;
 		for(int t:nums) {
 			sum+=t;
@@ -35,5 +35,5 @@ public class Lt_416 {
 			return A||B;
 		}
 	}
-	
+
 }

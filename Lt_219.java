@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.HashMap;
 
@@ -10,8 +10,8 @@ public class Lt_219 {
 		int nums []  = {1,0,1,1};
 		System.out.println(containsNearbyDuplicate(nums, 1));
 	}
-	
-	public static boolean containsNearbyDuplicate(int[] nums, int k) {
+
+    public static boolean containsNearbyDuplicate(int[] nums, int k) {
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		int res = 0;
 		for (int i = 0; i < nums.length; i++) {

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_896 {
 
@@ -7,8 +7,8 @@ public class Lt_896 {
 		int [] arr = {6,5,4,2,1};
 		System.out.println(isMonotonic(arr));
 	}
-	
-	public static boolean isMonotonic(int[] A) {
+
+    public static boolean isMonotonic(int[] A) {
 		boolean f1 = false;
 		boolean f2 = false;
 		for (int i = 1; i < A.length; i++) {

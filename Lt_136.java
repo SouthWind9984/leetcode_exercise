@@ -1,6 +1,4 @@
-package leetcode_exercise;
-
-import java.util.Arrays;
+package LeetCode_ADailyTopic;
 
 public class Lt_136 {
 
@@ -8,23 +6,23 @@ public class Lt_136 {
 		// TODO 自动生成的方法存根
 
 		int arr [] = {4,1,2,1,2};
-		
-		int n = singleNumber(arr);
+
+        int n = singleNumber(arr);
 		System.out.println(n);
 	}
-	
-	 public static int singleNumber(int[] nums) {
+
+    public static int singleNumber(int[] nums) {
 		 int res = nums[0];
 		 if(nums.length==1)
 			 System.out.println(nums[0]);
-		
-		 else {
+
+         else {
 			 for(int i=1;i<nums.length;i++)
 			 {
 				res^=nums[i];
 			 }
-			 
-		 }
+
+         }
 		 return res;
     }
 

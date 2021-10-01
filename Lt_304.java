@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_304 {
 
@@ -23,12 +23,12 @@ class NumMatrix {
 			}
     	}
     }
-    
+
     public int sumRegion(int row1, int col1, int row2, int col2) {
-		int sum = 0; 
-    	for (int i = row1; i <= row2; i++) {
-    		sum+=arr[i][col2]-arr[i][col1-1];
-		}
-    	return sum;
+        int sum = 0;
+        for (int i = row1; i <= row2; i++) {
+            sum += arr[i][col2] - arr[i][col1 - 1];
+        }
+        return sum;
     }
 }

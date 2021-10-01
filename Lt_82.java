@@ -1,6 +1,5 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 

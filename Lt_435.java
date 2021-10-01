@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_435 {
 
@@ -9,11 +9,10 @@ public class Lt_435 {
 		System.out.println(n);
 	}
 	public static int eraseOverlapIntervals(int[][] intervals) {
-		 
-		
-		
-		return 0;
-        
+
+
+        return 0;
+
     }
 
 }

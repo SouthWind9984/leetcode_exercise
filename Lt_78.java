@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ public class Lt_78 {
 		subsets(nums);
 	}
 	public static List<List<Integer>> subsets(int[] nums) {
-		
-		List<Integer> list1 =  new ArrayList<Integer>();
+
+        List<Integer> list1 =  new ArrayList<Integer>();
 		List<List<Integer>> resList = new ArrayList<List<Integer>>();
 		resList.add(list1);
 		for(int i = 0 ; i< nums.length;i++) {

@@ -1,8 +1,7 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Vector;
 
 public class Lt_73 {
     public static void main(String[] args) {

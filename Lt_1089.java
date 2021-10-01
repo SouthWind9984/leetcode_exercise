@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_1089 {
 
@@ -23,9 +23,8 @@ public class Lt_1089 {
 		for (int i : arr) {
 			System.out.print(i+" ");
 		}
-		
-		
-		
+
+
     }
 
 }

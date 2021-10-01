@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.HashMap;
 
@@ -25,7 +25,6 @@ public class Lt_3 {
 		}
 		return res;
 	}
-	
 
 
 }

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_344 {
 
@@ -8,10 +8,9 @@ public class Lt_344 {
 		char [] s = {'h','e','l','l','o'};
 		reverseString(s);
 	}
-	
-	
-	
-	public static void reverseString(char[] s) {
+
+
+    public static void reverseString(char[] s) {
 		for(int i=0;i<s.length/2;i++)
 		{
 			char swap=' ';

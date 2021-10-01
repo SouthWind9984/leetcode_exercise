@@ -1,11 +1,11 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 public class Lt_357 {
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-		
-		System.out.println(countNumbersWithUniqueDigits(3));
+
+        System.out.println(countNumbersWithUniqueDigits(3));
 	}
 	public static int countNumbersWithUniqueDigits(int n) {
 		int res = 9;

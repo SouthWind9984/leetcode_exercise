@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.TreeMap;
 
@@ -8,10 +8,10 @@ public class Lt_878 {
 		// TODO 自动生成的方法存根
 		nthMagicalNumber(4,2,3);
 	}
-	
-	public static int nthMagicalNumber(int n, int a, int b) {
-		
-		Long res = 0L;
+
+    public static int nthMagicalNumber(int n, int a, int b) {
+
+        Long res = 0L;
 		TreeMap<Long,Integer> map = new TreeMap<>();
 		for (int i = 1; i <= n; i++) {
 			map.put((long) a * i,0);

@@ -1,4 +1,4 @@
-package leetcode_exercise;
+package LeetCode_ADailyTopic;
 
 import java.util.Scanner;
 
@@ -19,8 +19,8 @@ public class Lt_202 {
 		Scanner  in = new Scanner(System.in);
 		int n = in.nextInt();
 		int nn = n;
-		
-		boolean flag = false;
+
+        boolean flag = false;
 		for(int i=1;i<=100;i++)
 		{
 			int result = 0;
