@@ -13,9 +13,15 @@ public class Leet_414 {
         for (int num : nums) {
             treeSet.add(num);
         }
-        while (treeSet.size() > 3) {
-            treeSet.pollLast();
+        int len = treeSet.size();
+        if (len > 2) {
+            int res = 0;
+            for (int i = 0; i < 3; i++) {
+                res = treeSet.pollLast();
+            }
+            return res;
+        } else {
+            return treeSet.pollLast();
         }
-        return treeSet.pollLast();
     }
 }
