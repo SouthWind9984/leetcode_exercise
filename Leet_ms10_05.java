@@ -1,6 +1,6 @@
 package LeetCode_ADailyTopic;
 
-public class Leet_面试10_05 {
+public class Leet_ms10_05 {
     public static void main(String[] args) {
 
     }
