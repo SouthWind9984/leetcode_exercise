@@ -1,7 +1,10 @@
+package LeetCode_ADailyTopic;
+
 public class Leet_273 {
     public static void main(String[] args) {
 
     }
+
     static String[] num2str_small = {
             "Zero",
             "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
@@ -13,6 +16,7 @@ public class Leet_273 {
     static String[] num2str_large = {
             "Billion", "Million", "Thousand", "",
     };
+
     String num2Str(int x) {
         String ans = "";
         if (x >= 100) {
@@ -26,6 +30,7 @@ public class Leet_273 {
         if (x != 0) ans += num2str_small[x] + " ";
         return ans;
     }
+
     public String numberToWords(int num) {
         if (num == 0) return num2str_small[0];
         StringBuilder sb = new StringBuilder();
