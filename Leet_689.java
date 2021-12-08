@@ -1,8 +1,5 @@
 package LeetCode_ADailyTopic;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author SouthWind
  * @date 2021/12/8
@@ -12,7 +9,11 @@ import java.util.List;
 
 public class Leet_689 {
     public static void main(String[] args) {
-
+        int a = 1;
+        int b = 2;
+        int c = a + b;
+        int d = a * c;
+        System.out.println(c + " " + d);
     }
 
     /**
@@ -24,26 +25,50 @@ public class Leet_689 {
      * @return
      */
     public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
-        List<Integer> list = new ArrayList<>();
         int len = nums.length;
-        //加上步长，不超过数组下标
-        for (int i = 0; i <= len - k; i++) {
-            // 记录临时的值
-            int tmpSum = 0;
-            for (int j = i; j < i + k; j++) {
-                tmpSum += nums[j];
+        int n = len - k + 1;
+        int[] sumArr = new int[n];
+        // 记录临时的值
+        int tmpSum = 0;
+        for (int i = 0; i < len; i++) {
+            tmpSum += nums[i];
+            if (i >= k) {
+                tmpSum -= nums[i - k];
             }
-            list.add(tmpSum);
+            if (i >= k - 1)
+                sumArr[i - k + 1] = tmpSum;
+        }
+        //右侧最大下标
+        int[] rightArr = new int[n];
+        int maxIndex = n - 1;
+        for (int i = n - 1; i >= 0; i--) {
+            if (sumArr[maxIndex] < sumArr[i]) {
+                maxIndex = i;
+            }
+            rightArr[i] = maxIndex;
+        }
+        // 左侧最大下标
+        int[] leftArr = new int[n];
+        maxIndex = 0;
+        for (int i = 0; i < n; i++) {
+            if (sumArr[maxIndex] < sumArr[i]) {
+                maxIndex = i;
+            }
+            leftArr[i] = maxIndex;
         }
         int[] ans = new int[3];
-        //动态规划，dp[i] = Math.max(dp[i-1],list.get(i)+dp[i-k])
-        int prev = 0;
-        int curr = 0;
-        for (int i : list) {
-            int temp = Math.max(curr, prev + i);
-            prev = curr;
-            curr = temp;
+        for (int i = 0; i < 3; i++) {
+            ans[i] = -1;
         }
-        return nums;
+        for (int i = k; i < n - k; i++) {
+            if (ans[0] == -1 || sumArr[ans[0]] + sumArr[ans[1]] + sumArr[ans[2]] <
+                    sumArr[i] + sumArr[leftArr[i - k]] + sumArr[rightArr[i + k]]) {
+                ans[0] = leftArr[i - k];
+                ans[1] = i;
+                ans[2] = rightArr[i + k];
+            }
+        }
+        return ans;
     }
+
 }
