@@ -9,19 +9,12 @@ public class Lt_507 {
     }
 
     public static boolean checkPerfectNumber(int num) {
-
-        if(num==1)return false;
-        int sum =1;
-        for(int i=2;i<Math.sqrt(num);i++) {
-        	if(num%i==0) {
-        		sum+=i;
-        		sum+=num/i;   //算平方根的时候，需要加上它的倍数
-        	}
+        if (num == 1) return false;
+        int sum = 1;
+        for (int i = 2; i < Math.sqrt(num); i++) {
+            sum += num % i == 0 ? i + num / i : 0;
         }
-        if(sum==num)
-        	return true;
-        else
-        	return false;
+        return sum == num;
     }
 
 }
