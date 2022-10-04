@@ -9,10 +9,12 @@ import java.util.Queue;
 
 public class Leet_102 {
 
-    private List<List<Integer>> list = new ArrayList<>();
+    List<List<Integer>> list = new ArrayList<>();
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        BFS(root);
+//        BFS(root);
+        list.add(new ArrayList<>());
+        DFS(root, 0);
         System.out.println(list);
         return list;
     }
@@ -36,5 +38,19 @@ public class Leet_102 {
             }
             list.add(list1);
         }
+    }
+
+    public void DFS(TreeNode root, int level) {
+        if (root == null) {
+            return;
+        }
+        //给下一层备用
+        if (level >= list.size()) {
+            list.add(new ArrayList<>());
+        }
+        //加入该层节点
+        list.get(level).add(root.val);
+        DFS(root.left, level + 1);
+        DFS(root.right, level + 1);
     }
 }
