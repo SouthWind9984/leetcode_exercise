@@ -38,4 +38,10 @@ public class Leet_1700 {
         }
         return 0;
     }
+
+    public int countStudents1(int[] students, int[] sandwiches) {
+
+
+        return 0;
+    }
 }
